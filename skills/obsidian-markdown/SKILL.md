@@ -41,14 +41,14 @@ or use Shift+Enter.
 
 ### Text Formatting
 
-| Style | Syntax | Example | Output |
-|-------|--------|---------|--------|
-| Bold | `**text**` or `__text__` | `**Bold**` | **Bold** |
-| Italic | `*text*` or `_text_` | `*Italic*` | *Italic* |
-| Bold + Italic | `***text***` | `***Both***` | ***Both*** |
-| Strikethrough | `~~text~~` | `~~Striked~~` | ~~Striked~~ |
-| Highlight | `==text==` | `==Highlighted==` | ==Highlighted== |
-| Inline code | `` `code` `` | `` `code` `` | `code` |
+| Style         | Syntax                   | Example           | Output          |
+| ------------- | ------------------------ | ----------------- | --------------- |
+| Bold          | `**text**` or `__text__` | `**Bold**`        | **Bold**        |
+| Italic        | `*text*` or `_text_`     | `*Italic*`        | *Italic*        |
+| Bold + Italic | `***text***`             | `***Both***`      | ***Both***      |
+| Strikethrough | `~~text~~`               | `~~Striked~~`     | ~~Striked~~     |
+| Highlight     | `==text== `              | `==Highlighted==` | ==Highlighted== |
+| Inline code   | `` `code` ``             | `` `code` ``      | `code`          |
 
 ### Escaping Formatting
 
