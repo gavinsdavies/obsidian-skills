@@ -105,7 +105,7 @@ Display the review in the conversation.
 After showing the review, ask:
 > "Would you like me to save this as a note? If so, I can write it to `Journal/YYYY/WW-weekly-review.md` or append it to your Monday note."
 
-If saving, use standard Obsidian frontmatter:
+If saving, use standard Obsidian frontmatter with a backlink to the Monday note the review was conducted on:
 ```yaml
 ---
 type: weekly-review
@@ -116,6 +116,12 @@ tags:
   - weekly-review
   - journal
 ---
+up:: [[YYYY-MM-DD-Monday]]
+```
+
+After writing the review note, **always** add a backlink in today's daily note (the note for the date `/weekly-review` was run). Insert it as a bullet in the `## 📝 Notes` section:
+```markdown
+- [[WNN-weekly-review|Weekly review for WNN (Mon DD – Sun DD)]]
 ```
 
 ---
@@ -133,7 +139,8 @@ tags:
 - Fabricate habit data — only report what's in frontmatter
 - Include boilerplate from journal templates (dataview blocks, nav links, etc.)
 - Make the review longer than needed — quality over completeness
-- Modify any journal files
+- Modify any of the reviewed journal files (Mon–Sun entries)
+- Add backlinks anywhere other than today's note
 
 ---
 
