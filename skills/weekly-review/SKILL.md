@@ -11,7 +11,8 @@ Helps conduct a structured weekly review from vault journal entries and recent a
 
 The user may specify:
 - A week (e.g. "last week", "week of March 3", "this week") — default is the **previous Monday–Sunday**
-- Whether to save the output to a note (default: display only, ask at end)
+
+Always save the review note automatically — do not ask.
 
 If today is Monday, default to the week just ended (previous Mon–Sun).
 If mid-week, default to the current week so far.
@@ -100,12 +101,9 @@ Show total for exercise and danish; show range/trend for weight.
 
 ## Output
 
-Display the review in the conversation.
+Display the review in the conversation, then **always** save it automatically without asking.
 
-After showing the review, ask:
-> "Would you like me to save this as a note? If so, I can write it to `Journal/YYYY/WW-weekly-review.md` or append it to your Monday note."
-
-If saving, use standard Obsidian frontmatter with a backlink to the Monday note the review was conducted on:
+Save to `Journal/YYYY/WNN-weekly-review.md`. Use standard Obsidian frontmatter with a backlink to the Monday note the review was conducted on:
 ```yaml
 ---
 type: weekly-review
